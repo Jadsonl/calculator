@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const InputResulContainer = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ export const InputResul = styled.input`
   text-align: right;
   font-size: 32px;
   font-weight: 700;
-  line-height: 40px;  
+  line-height: 40px;
   height: 100px;
   padding-right: 24px;
 `

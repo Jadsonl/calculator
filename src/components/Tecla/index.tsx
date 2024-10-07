@@ -1,5 +1,4 @@
-
-import { TeclaContainer } from "./styles";
+import { TeclaContainer } from './styles'
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
   size?: number
@@ -8,8 +7,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 export function IconComponent({ Icon, ...res }: IconProps) {
   return (
     <TeclaContainer>
-      <Icon  {...res}/>
+      <Icon {...res} />
     </TeclaContainer>
-  );
-};
-
+  )
+}
