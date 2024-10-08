@@ -50,3 +50,15 @@ export const Line = styled.div`
   height: 1px;
   background-color: ${({ theme }) => theme['gray-800']};
 `
+
+export const BodyContent = styled.div`
+  padding: 24px;
+  position: relative;
+  top: 70%;
+  border-radius: 20px;
+  font-size: x-large;
+  text-align: end;
+  > div {
+    padding-top: 20px;
+  }
+`
