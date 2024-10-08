@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const InputResulContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-top: 40px;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
   position: relative;
   top: 9%;
 `
@@ -12,9 +12,9 @@ export const InputResulContainer = styled.div`
 export const InputResul = styled.input`
   all: unset;
   text-align: right;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 40px;
-  height: 100px;
-  padding-right: 24px;
+  line-height: 2.5rem;
+  height: 6.25rem;
+  padding-right: 1.5rem;
 `

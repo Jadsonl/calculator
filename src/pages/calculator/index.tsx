@@ -1,16 +1,20 @@
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { CalculatorContainer, ContainerTeclas } from './styles'
 import { InputResult } from '../../components/Input'
-
 import { DarkMode } from '../../components/DarkMode'
 import { ContainerNumbers } from '../../components/ContainerNumbers'
-import { DarkModeContext } from '../../routes/route'
+import { CurrentNumberContext, DarkModeContext } from '../../routes/route'
 
 export function Calculator() {
-  const [currentNumber, setCurrentNumber] = useState<string>('0')
-  const [firstNumber, SetFirstNumber] = useState('0')
-  const [operator, setOperator] = useState('')
   const { isActive } = useContext(DarkModeContext)
+  const {
+    currentNumber,
+    setCurrentNumber,
+    firstNumber,
+    SetFirstNumber,
+    operator,
+    setOperator,
+  } = useContext(CurrentNumberContext)
 
   return (
     <CalculatorContainer $isActive={isActive}>

@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { CalculatorContainerProps } from '../calculator/styles'
 
 export const ContainerHistory = styled.div<CalculatorContainerProps>`
-  width: 390px;
-  height: 797px;
+  width: 24.375rem;
+  height: 49.8125rem;
 
   position: absolute;
   top: 50%;

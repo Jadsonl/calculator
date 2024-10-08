@@ -4,8 +4,8 @@ import { CalculatorContainerProps } from '../../pages/calculator/styles'
 export const ContainerNumber = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 55px 65px;
-  padding: 21px;
+  gap: 3.4375rem 4.0625rem;
+  padding: 1.3125rem;
 `
 
 export const EqualCircle = styled.div<CalculatorContainerProps>`

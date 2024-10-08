@@ -17,8 +17,4 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
     -moz-osx-font-smoothing: grayscale;
     background-color: ${({ theme }) => theme['gray-500']};
   } 
-  
-  
-
 `
-console.log()

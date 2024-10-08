@@ -1,5 +1,5 @@
-import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
-import styled from "styled-components";
+import { ButtonHTMLAttributes, DetailedHTMLProps } from 'react'
+import styled from 'styled-components'
 
 export const DarkModeContainer = styled.div`
   width: 100px;
@@ -12,27 +12,33 @@ export const DarkModeContainer = styled.div`
   gap: 6px;
   color: ${(props) => props.theme.white};
   margin: 72px 0 0 34px;
-  background-color: ${(props) => props.theme["green-500"]};
-
+  background-color: ${(props) => props.theme['green-500']};
 `
-interface ButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
-  $active?: boolean;
+interface ButtonProps
+  extends DetailedHTMLProps<
+    ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
+  $active?: boolean
 }
-
 
 export const ButtonGlobal = styled.button<ButtonProps>`
   all: unset;
   cursor: pointer;
   padding: 6px;
   border-radius: 14px;
-`;
+`
 
 export const LightModeButton = styled(ButtonGlobal)`
-  background-color: ${(props) => (props.$active ? props.theme.white : "transparent")};
-  color: ${(props) => (props.$active ? props.theme["green-500"] : props.theme.white)};
-`;
+  background-color: ${(props) =>
+    props.$active ? props.theme.white : 'transparent'};
+  color: ${(props) =>
+    props.$active ? props.theme['green-500'] : props.theme.white};
+`
 
 export const DarkModeButton = styled(ButtonGlobal)`
-  background-color: ${(props) => (props.$active ? props.theme.white : "transparent")};
-  color: ${(props) => (props.$active ? props.theme["green-500"] : props.theme.white)};
-`;
+  background-color: ${(props) =>
+    props.$active ? props.theme.white : 'transparent'};
+  color: ${(props) =>
+    props.$active ? props.theme['green-500'] : props.theme.white};
+`

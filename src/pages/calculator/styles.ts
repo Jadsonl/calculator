@@ -5,8 +5,8 @@ export interface CalculatorContainerProps
   $isActive: boolean
 }
 export const CalculatorContainer = styled.div<CalculatorContainerProps>`
-  width: 390px;
-  height: 797px;
+  width: 24.375rem;
+  height: 49.8125rem;
 
   position: absolute;
   top: 50%;
@@ -23,7 +23,7 @@ export const CalculatorContainer = styled.div<CalculatorContainerProps>`
 
 export const ContainerTeclas = styled.div<CalculatorContainerProps>`
   position: relative;
-  height: 100vw;
+  height: 100%;
   top: 10%;
   border-radius: 20px;
   background-color: ${({ theme, $isActive }) =>
